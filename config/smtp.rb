@@ -1,7 +1,7 @@
 SMTP_SETTINGS = {
-  address: ENV.fetch("SMTP_ADDRESS"), # example: "smtp.sendgrid.net"
+  address: ENV.fetch("smtp.sendgrid.net"), # example: "smtp.sendgrid.net"
   authentication: :plain,
-  domain: ENV.fetch("SMTP_DOMAIN"), # example: "heroku.com"
+  domain: ENV.fetch("heroku.com"), # example: "heroku.com"
   enable_starttls_auto: true,
   password: ENV.fetch("SMTP_PASSWORD"),
   port: "587",

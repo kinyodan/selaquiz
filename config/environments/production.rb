@@ -1,4 +1,4 @@
-require Rails.root.to_s + "config/smtp"
+#require Rails.root.to_s + "config/smtp"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 

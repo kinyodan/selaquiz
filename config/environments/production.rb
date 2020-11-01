@@ -1,6 +1,16 @@
-require Rails.root.to_s + "config/smtp"
+require Rails.root.to_s + "config/smtp."
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  
+SMTP_SETTINGS = {
+  address: "smtp.sendgrid.net", # example: "smtp.sendgrid.net"
+  authentication: :plain,
+  domain: "heroku.com", # example: "heroku.com"
+  enable_starttls_auto: true,
+  password: "SMTP_PASSWORD",
+  port: "587",
+  user_name: "SMTP_USERNAME"
+}
 
   # Code is not reloaded between requests.
   config.cache_classes = true

@@ -34,8 +34,8 @@ $ ->
           React.render(<ParticipantsList newParticipant=uuid_with_status />, participantListReact)    
       
     pubnub = PUBNUB(
-      publish_key: '<%= ENV.fetch('PUBNUB_PUBLISH_KEY') %>',
-      subscribe_key: '<%= ENV.fetch('PUBNUB_SUBSCRIBE_KEY') %>',
+      publish_key: 'pub-c-062e80a5-5176-423a-90ed-2aeaad17b322',
+      subscribe_key: 'sub-c-cc235598-f6ac-11e6-861a-0619f8945a4f',
       auth_key: authorization_key,
       uuid: authorization_key,
       origin: 'pubsub.pubnub.com',

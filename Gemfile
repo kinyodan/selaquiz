@@ -14,7 +14,7 @@ gem "jquery-rails"
 gem "neat", "~> 1.7.0"
 gem "newrelic_rpm", ">= 3.9.8"
 gem "normalize-rails", "~> 3.0.0"
-gem "pg"
+gem 'pg', '~> 0.19.0'
 gem "rack-timeout"
 gem "rails", "4.2.3"
 gem "recipient_interceptor"
